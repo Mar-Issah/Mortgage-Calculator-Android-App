@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:nestedScrollingEnabled="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/upperLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="25dp"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/imageViewProgress"
+                android:src="@drawable/bar_progress"
+                android:layout_width="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/textMortgage"
+                android:layout_marginTop="60dp"
+                android:layout_width="wrap_content"
+                android:text="@string/mortgage"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+                android:layout_marginStart="90dp"
+                android:fontFamily="@font/lemon"
+                android:textColor="@color/curry"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/textViewTotalSymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textView_symbol"
+                android:textColor="@color/curry"
+                android:fontFamily="@font/lemon"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="90dp" />
+
+            <TextView
+                android:id="@+id/textShowMortgage"
+                android:fontFamily="@font/lemon"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="90dp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:visibility="visible"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_below="@id/upperLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/details"
+        android:fontFamily="@font/lemon"
+        android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/lowerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/upperLayout"
+            android:layout_margin="25dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/textViewPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lemon"
+                android:text="@string/principal"
+                android:textColor="@color/curry" />
+
+            <EditText
+                android:id="@+id/editTextPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewPrincipal"
+                android:layout_marginStart="10dp"
+                android:cursorVisible="false"
+                android:hint="@string/principal_hint"
+                android:inputType="numberDecimal|numberSigned"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextPrincipal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lemon"
+                android:text="@string/years"
+                android:textColor="@color/curry" />
+
+            <EditText
+                android:id="@+id/editTextYears"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewYears"
+                android:layout_marginStart="10dp"
+                android:cursorVisible="false"
+                android:hint="@string/years_hint"
+                android:inputType="numberDecimal|numberSigned"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextYears"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lemon"
+                android:text="@string/rate"
+                android:textColor="@color/curry" />
+
+            <EditText
+                android:id="@+id/editTextRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewRate"
+                android:layout_marginStart="10dp"
+                android:cursorVisible="false"
+                android:hint="@string/rate_hint"
+                android:inputType="numberDecimal|numberSigned"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextRate"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lemon"
+                android:text="@string/total"
+                android:textColor="@color/curry"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewTotalSym"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTotal"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lemon"
+                android:text="@string/textView_symbol"
+                android:textColor="@color/curry" />
+
+            <TextView
+                android:id="@+id/textViewShowTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTotal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/textViewTotalSym"
+                android:fontFamily="@font/lemon"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/buttonCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewTotal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="103dp"
+                android:fontFamily="@font/lemon"
+                android:onClick="buttonCalculate"
+                android:text="@string/calculate"
+                android:textAllCaps="false" />
+
+        </RelativeLayout>
+
+    <include
+        android:id="@+id/trademark"
+        layout="@layout/trademark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

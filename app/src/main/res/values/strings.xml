@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Mortgage Calculator</string>
+    <string name="trademark">Developed by Marsiya Issah</string>
+    <string name="image">my logo</string>
+
+
+    <string name="principal">Principal $ :</string>
+    <string name="years">Years/ Period :</string>
+    <string name="rate">Interest Rate % :</string>
+    <string name="total">Principal plus Interest</string>
+    <string name="calculate"> Calculate</string>
+
+    <string name="principal_hint">Enter principal</string>
+    <string name="years_hint">Enter years/ period</string>
+    <string name="rate_hint">Enter annual rate</string>
+    <string name="details">Please Fill in Fields Below</string>
+
+    <string name="mortgage"> Your Monthly Payments</string>
+    <string name="textView_symbol"> $  </string>
+
+
+</resources>
